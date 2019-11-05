@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>轻代理问题处理汇总</title>
+      <link href="/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+      <url>/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>gitlab私有服务上传不了大文件；</p></li><li><p>jhjs.nisco.cn:81域名做的反向代理发现有原先get类型的接口现在必须改成post；</p></li><li><p>反向代理做的静态资源重定向上传附件类接口都失效</p></li><li><p>有一台客户端172.18.248.51登录协同APP的管理界面失败。</p></li><li><p>一台邮件服务器安装客户端后没有显示主程序版本、病毒库、特征库。</p></li><li><p>客户端离线问题</p></li></ol><ul><li><input disabled="" type="checkbox"> 客户端版本为cetos7.7</li><li><input disabled="" type="checkbox"> 客户端版本为cetos7.4</li></ul><ol start="7"><li>（客户现场不能复现这个问题）</li><li>NGINX服务器跑轻代理CPU占用高（跑了很多关于web界面的任务，下发扫描病毒CPU占用率就高（全扫，半小时后客户卸了重装轻代理），昨天下午重装轻代理，今天下发全扫，CPU占用率正常）</li><li>一台Windows服务器离线（卸载别的杀毒软件后，重装轻代理，在线。但客户说之前也是在线，一段时间后离线，等待后续）</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 运维 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杀毒软件 </tag>
+            
+            <tag> 轻代理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>棒材精整MES宕机处理过程</title>
       <link href="/%E6%A3%92%E6%9D%90%E7%B2%BE%E6%95%B4MES%E5%AE%95%E6%9C%BA%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B/"/>
       <url>/%E6%A3%92%E6%9D%90%E7%B2%BE%E6%95%B4MES%E5%AE%95%E6%9C%BA%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B/</url>
       
-        <content type="html"><![CDATA[<h3 id="运维日报"><a href="#运维日报" class="headerlink" title="运维日报"></a>运维日报</h3><ol><li>描述<br>2019年21点23收到短信报警，马上赶往公司处理，发现是248.225这台机器死机造成丢包，这个点为21点35分</li><li>处理：<br>重启248.225物理机，第一次重启结束为21点46分，系统处于更新状态，等待更新，大约在21点52分，重启过程中发生自动重启，21点58自动重启结束，继续等待系统更新<strong>，22点02分系统更新结束，检查3389端口正常，故障处理结束</strong>。</li><li>分析：<br>造成服务器宕机是由于操作系统处理卡死状态，重启系统更新，怀疑是否有外网权限。</li></ol>]]></content>
+        <content type="html"><![CDATA[<h3 id="运维日报"><a href="#运维日报" class="headerlink" title="运维日报"></a>运维日报</h3><ol><li>描述<br>2019年21点23收到短信报警，马上赶往公司处理，发现是248.225这台机器死机造成丢包，这个点为21点35分</li><li>分析：<br>造成服务器宕机是由于操作系统处理卡死状态，重启系统更新，怀疑是否有外网权限。</li><li>处理：<br>重启248.225物理机，第一次重启结束为21点46分，系统处于更新状态，等待更新，大约在21点52分，重启过程中发生自动重启，21点58自动重启结束，继续等待系统更新<strong>，22点02分系统更新结束，检查3389端口正常，故障处理结束</strong>。</li></ol>]]></content>
       
       
       <categories>
