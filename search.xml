@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>k8s集群组件</title>
+      <link href="/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6/"/>
+      <url>/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p><img src="http://q0h7gb9yw.bkt.clouddn.com/image/k8s/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6.png" alt="image"></p><p>AIPServer: 所有服务访问的统一入口</p><p>crontrollerManager： 维持副本的期望数目，重要组件；</p><p>Schedule： 负责接收任务，选择合适的节点进行分配任务；</p><p>etcd: 键值对数据库，存储k8s集群的所有信息（持久化）</p><p>kubelet： 直接和docker引擎交互实现生命周期管理</p><p>kube-proxy： 负责写入规则至IPTABLES ，IPVS</p><p>COREDNS： 可以为集群中的svc创建一个A记录</p><p>dashboard： 给k8s提供一个b/s结构的访问体系</p><p>Ingess Controller： 官方集群只能实现四层代理，ingress可以实现七层代理</p><p>FEDETATION：提供一个可以跨集群中心多k8s统一管理工能</p><p>Prometheus: 提供一个k8s集群的监控能力</p><p>EFK: 提供k8s集群日志统一分析接入平台</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> kubernetes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> k8s </tag>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>轻代理问题处理汇总</title>
       <link href="/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
       <url>/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</url>

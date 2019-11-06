@@ -211,6 +211,88 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://www.it2blog.com/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/user.png">
+      <meta itemprop="name" content="Wangsk">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wangsk's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6/" class="post-title-link" itemprop="url">k8s集群组件</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-06 10:43:44 / 修改时间：11:36:29" itemprop="dateCreated datePublished" datetime="2019-11-06T10:43:44+08:00">2019-11-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/kubernetes/" itemprop="url" rel="index">
+                    <span itemprop="name">kubernetes</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="http://q0h7gb9yw.bkt.clouddn.com/image/k8s/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6.png" alt="image"></p>
+<p>AIPServer: 所有服务访问的统一入口</p>
+<p>crontrollerManager： 维持副本的期望数目，重要组件；</p>
+<p>Schedule： 负责接收任务，选择合适的节点进行分配任务；</p>
+<p>etcd: 键值对数据库，存储k8s集群的所有信息（持久化）</p>
+<p>kubelet： 直接和docker引擎交互实现生命周期管理</p>
+<p>kube-proxy： 负责写入规则至IPTABLES ，IPVS</p>
+<p>COREDNS： 可以为集群中的svc创建一个A记录</p>
+<p>dashboard： 给k8s提供一个b/s结构的访问体系</p>
+<p>Ingess Controller： 官方集群只能实现四层代理，ingress可以实现七层代理</p>
+<p>FEDETATION：提供一个可以跨集群中心多k8s统一管理工能</p>
+<p>Prometheus: 提供一个k8s集群的监控能力</p>
+<p>EFK: 提供k8s集群日志统一分析接入平台</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://www.it2blog.com/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -426,20 +508,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -458,6 +540,9 @@
       </span>
       <span class="links-of-author-item">
         <a href="https://weibo.com/wsk001" title="Weibo &amp;rarr; https:&#x2F;&#x2F;weibo.com&#x2F;wsk001" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.jianshu.com/p/efbeddc5eb19" title="csdn &amp;rarr; https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;efbeddc5eb19" rel="noopener" target="_blank"><i class="fa fa-fw fa-csdn"></i>csdn</a>
       </span>
   </div>
 

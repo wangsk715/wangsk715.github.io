@@ -51,14 +51,20 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wangsk&#39;s Blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;www.it2blog.com&#x2F;tags&#x2F;%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6&#x2F;index.html">
+  <meta name="description" content="AIPServer: 所有服务访问的统一入口 crontrollerManager： 维持副本的期望数目，重要组件； Schedule： 负责接收任务，选择合适的节点进行分配任务； etcd: 键值对数据库，存储k8s集群的所有信息（持久化） kubelet： 直接和docker引擎交互实现生命周期管理 kube-proxy： 负责写入规则至IPTABLES ，IPVS COREDNS： 可以为">
+<meta name="keywords" content="k8s,docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="k8s集群组件">
+<meta property="og:url" content="http:&#x2F;&#x2F;www.it2blog.com&#x2F;k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6&#x2F;index.html">
 <meta property="og:site_name" content="Wangsk&#39;s Blog">
+<meta property="og:description" content="AIPServer: 所有服务访问的统一入口 crontrollerManager： 维持副本的期望数目，重要组件； Schedule： 负责接收任务，选择合适的节点进行分配任务； etcd: 键值对数据库，存储k8s集群的所有信息（持久化） kubelet： 直接和docker引擎交互实现生命周期管理 kube-proxy： 负责写入规则至IPTABLES ，IPVS COREDNS： 可以为">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http:&#x2F;&#x2F;q0h7gb9yw.bkt.clouddn.com&#x2F;image&#x2F;k8s&#x2F;k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6.png">
+<meta property="og:updated_time" content="2019-11-06T03:36:29.107Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q0h7gb9yw.bkt.clouddn.com&#x2F;image&#x2F;k8s&#x2F;k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6.png">
 
-<link rel="canonical" href="http://www.it2blog.com/tags/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/">
+<link rel="canonical" href="http://www.it2blog.com/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6/">
 
 
 <script id="page-configurations">
@@ -66,13 +72,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: 杀毒软件 | Wangsk's Blog</title>
+  <title>k8s集群组件 | Wangsk's Blog</title>
   
 
 
@@ -206,50 +212,108 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">杀毒软件
-          <small>标签</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://www.it2blog.com/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/user.png">
+      <meta itemprop="name" content="Wangsk">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wangsk's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          k8s集群组件
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-06 10:43:44 / 修改时间：11:36:29" itemprop="dateCreated datePublished" datetime="2019-11-06T10:43:44+08:00">2019-11-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/kubernetes/" itemprop="url" rel="index">
+                    <span itemprop="name">kubernetes</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+        <p><img src="http://q0h7gb9yw.bkt.clouddn.com/image/k8s/k8s%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6.png" alt="image"></p>
+<p>AIPServer: 所有服务访问的统一入口</p>
+<p>crontrollerManager： 维持副本的期望数目，重要组件；</p>
+<p>Schedule： 负责接收任务，选择合适的节点进行分配任务；</p>
+<p>etcd: 键值对数据库，存储k8s集群的所有信息（持久化）</p>
+<p>kubelet： 直接和docker引擎交互实现生命周期管理</p>
+<p>kube-proxy： 负责写入规则至IPTABLES ，IPVS</p>
+<p>COREDNS： 可以为集群中的svc创建一个A记录</p>
+<p>dashboard： 给k8s提供一个b/s结构的访问体系</p>
+<p>Ingess Controller： 官方集群只能实现四层代理，ingress可以实现七层代理</p>
+<p>FEDETATION：提供一个可以跨集群中心多k8s统一管理工能</p>
+<p>Prometheus: 提供一个k8s集群的监控能力</p>
+<p>EFK: 提供k8s集群日志统一分析接入平台</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-05T10:43:44+08:00"
-              content="2019-11-05">
-          11-05
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/k8s/" rel="tag"># k8s</a>
+              <a href="/tags/docker/" rel="tag"># docker</a>
+          </div>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" itemprop="url">
-            <span itemprop="name">轻代理问题处理汇总</span>
-          </a>
-      </h2>
+        
 
-    </header>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/360%E8%BD%BB%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" rel="next" title="轻代理问题处理汇总">
+                  <i class="fa fa-chevron-left"></i> 轻代理问题处理汇总
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
   </article>
+  
+  
+  
 
-    </div>
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
